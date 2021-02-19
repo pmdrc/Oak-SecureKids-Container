@@ -35,13 +35,20 @@
 
 Run this command on the Container Console
 
-    $ apt update   
-    $ apt upgrade         
-    $ apt install python  
-    $ apt install python3-pip
-    $ sudo pip3 install pihole5-list-tool --upgrade
-    $ sudo pihole5-list-tool
-    $ sudo pihole -a -p
+    apt update   
+    apt upgrade         
+    apt install python3-pip
+    pip3 install pihole5-list-tool --upgrade
+    pihole5-list-tool
+
+add this URK to the Web interface -> Group Management -> Adlist
+
+    https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts
+
+Run this command on the Container Console
+
+    pihole -g
+
  
 References:  
 https://hub.docker.com/r/pihole/pihole  
